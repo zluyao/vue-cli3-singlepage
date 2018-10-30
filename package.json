@@ -12,11 +12,13 @@
     "analyze": "vue-cli-service build"
   },
   "dependencies": {
+    "@lenic/deferred": "^1.0.1",
     "axios": "0.17.1",
     "element-ui": "2.3.4",
     "js-cookie": "2.2.0",
     "normalize.css": "7.0.0",
     "nprogress": "0.2.0",
+    "qs": "^6.5.2",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
@@ -24,12 +26,13 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.0",
     "@vue/cli-service": "^3.0.0",
+    "@zluyao/deferred": "^1.0.0",
+    "compression-webpack-plugin": "^1.0.0",
     "node-sass": "^4.9.3",
     "qiniu-webpack-plugin": "^0.4.2",
     "sass-loader": "^7.1.0",
     "svg-sprite-loader": "3.5.2",
     "vue-template-compiler": "^2.5.17",
-    "compression-webpack-plugin": "^1.0.0",
     "webpack-bundle-analyzer": "^2.13.1"
   },
   "postcss": {

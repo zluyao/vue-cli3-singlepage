@@ -1,5 +1,4 @@
 // 七牛上传插件
-const QiniuPlugin = require('qiniu-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const path = require('path');
 let CompressionWebpackPlugin = require('compression-webpack-plugin');

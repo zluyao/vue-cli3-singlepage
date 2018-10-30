@@ -37,7 +37,11 @@ export default {
   },
   created() {
     console.log('createdclassifylist');
+    console.log(11);
   },
+  mounted() {
+    console.log(22);
+  }
 };
 </script>
 
