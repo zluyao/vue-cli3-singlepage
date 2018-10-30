@@ -9,12 +9,10 @@ import "./assets/iconfont/iconfont.css"
 import '@/styles/index.scss' // global css
 
 Vue.config.productionTip = false;
-
+Vue.prototype.$post = post;
+Vue.prototype.$get = get;
 new Vue({
     router,
     store,
     render: h => h(App)
 }).$mount("#app");
-
-Vue.prototype.$post = post;
-Vue.prototype.$get = get;
