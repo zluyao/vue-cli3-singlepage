@@ -14,7 +14,9 @@
 </template>
 
 <script>
+import { mapState, mapMutations, mapActions } from 'vuex';
 import { Footly } from "../layout/components";
+console.log(22, mapState);
 export default {
   name: "classify",
   data() {
@@ -25,8 +27,15 @@ export default {
   components: {
     Footly
   },
+  computed: {
+    ...mapState(['classify'])
+  },
   methods: {
+    ...mapMutations(['setType', 'setPageNo']),
+    ...mapActions(['setTypeA']),
     toDetail(n) {
+      // this.setType(n); //提交mutations
+      this.setTypeA(n); // 派发一个actions  actions里面本质是一个异步里面提交一个mutations
       this.$router.push({
         path: '/classify/list/goodsdetail',
         query: {
@@ -38,6 +47,8 @@ export default {
   created() {
     console.log('createdclassifylist');
     console.log(11);
+    console.log(this.$store);
+    console.log(this);
   },
   mounted() {
     console.log(22);

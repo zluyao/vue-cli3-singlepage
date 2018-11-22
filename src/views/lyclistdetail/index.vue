@@ -17,6 +17,7 @@ export default {
   },
   created() {
     console.log('createdclassifylistdetail');
+    console.log(this.$store);
   },
 };
 </script>
